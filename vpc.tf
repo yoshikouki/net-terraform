@@ -63,8 +63,3 @@ resource "aws_security_group" "web-sg" {
     Name = "web-sg"
   }
 }
-
-resource "aws_eip" "web" {
-  instance = aws_instance.web-server.id
-  vpc      = true
-}
